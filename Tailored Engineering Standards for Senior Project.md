@@ -1,18 +1,8 @@
 # IEEE Systems Engineering Processes and Extreme Programming
 
-## Collaboration notes
-
-- Each person should edit only their assigned section below. Keep additions within that section to reduce merge conflicts.
-- For every task in your section, record the single-letter process outcome it addresses and explain the Extreme Programming (XP) implementation.
-- Support the XP explanation with direct quotations from the XP book. Include a page number or other locator with each quote when available.
-- Do not add a task list or outcome letters unless they have been verified against the assigned IEEE document.
-
----
 
 ## 6.4.2 Stakeholder Needs and Requirements Definition process
- 
-**Owner:** Emmet
- 
+  
 ## 1. Prepare for Stakeholder Needs and Requirements Definition
  
 ### a. Identify the stakeholders who have an interest in the software system throughout its lifecycle.
@@ -334,8 +324,6 @@ b. The key artifacts are the working software, the automated test suite, the tag
 ---
 
 ## 6.4.5 Design Definition process
-
-**Owner:** Emma
 
 Listed Outcomes
 
