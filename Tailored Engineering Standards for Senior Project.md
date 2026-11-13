@@ -10,22 +10,101 @@
 ---
 
 ## 6.4.2 Stakeholder Needs and Requirements Definition process
-
+ 
 **Owner:** Emmet
-
-<!-- Emmet: add your task responses below. Please leave the other sections unchanged. -->
-
-### Task responses
-
-<!--
-Copy this block once per task:
-
-#### Task: [task identifier or short name]
-
-- **Process outcome:** [single letter]
-- **XP implementation:** [How XP implements this task.]
-- **XP book quote(s):** “[Direct quote]” ([page or locator])
--->
+ 
+## 1. Prepare for Stakeholder Needs and Requirements Definition
+ 
+### a. Identify the stakeholders who have an interest in the software system throughout its lifecycle.
+ 
+- **Process outcome:** a
+- **XP implementation:** Early on, the team lists everyone the software touches: end users, the customer, the people who will maintain it, whoever operates it, and anyone else affected. The on-site customer speaks for most of them and pulls in the rest when a story needs their input.
+### b. Define the stakeholder needs and requirements definition strategy.
+ 
+- **Process outcome:** d
+- **XP implementation:** We find out what people need by talking to the customer often. Each need becomes a user story, backed by examples and acceptance tests. Stories get another look at every release and iteration planning session, so new feedback can change them.
+### c. Identify and plan for the necessary enabling systems or services needed to support stakeholder needs and requirements definition.
+ 
+- **Process outcome:** h
+- **XP implementation:** The team works out what it needs to capture stories, stay in touch with stakeholders, and run acceptance tests. Typically that's a shared story board, a room or video link for conversations, and an automated test framework.
+### d. Obtain or acquire access to the enabling systems or services to be used.
+ 
+- **Process outcome:** h
+- **XP implementation:** Someone sets up the story board and the test environment, then gives the customer and developers accounts. Before relying on them, the team confirms that stakeholders can actually take part and that acceptance tests run.
+## 2. Define stakeholder needs
+ 
+### a. Define context of use within the concept of operations and the preliminary life cycle concepts.
+ 
+- **Process outcome:** b
+- **XP implementation:** The customer explains to the team who will use the software, what they're trying to get done, and where. That goes into stories and examples. Small releases show what was wrong or missing, and the context gets corrected from there.
+### b. Identify stakeholder needs.
+ 
+- **Process outcome:** d
+- **XP implementation:** Needs come from talking with users and other stakeholders, watching them work, and showing them working software. Each one is written as a story, with examples to pin down what it means.
+### c. Prioritize and down-select needs.
+ 
+- **Process outcome:** e
+- **XP implementation:** In the planning game, the customer ranks stories by business value. Developers estimate the effort and flag technical risk. The team then picks the highest-value stories it can realistically finish in the next release or iteration, and the rest wait.
+### d. Define the stakeholder needs and rationale.
+ 
+- **Process outcome:** d
+- **XP implementation:** A story should say what the stakeholder wants and why. The customer and developers rework each one until both are clear, and the reason stays attached to the story. Details get settled in conversation, with examples, before anyone writes code.
+## 3. Develop the operational concept and other life cycle concepts
+ 
+### a. Define a representative set of scenarios to identify the required capabilities that correspond to anticipated operational and other life cycle concepts.
+ 
+- **Process outcome:** b
+- **XP implementation:** Story examples and acceptance-test scenarios double as the representative scenarios. They cover normal use as well as the important failures and how the user recovers. When a scenario exposes something the system can't do yet, it becomes a new story or a new acceptance criterion.
+### b. Identify the factors affecting interactions between users and the system.
+ 
+- **Process outcome:** b
+- **XP implementation:** The team talks through who the users are: what they can physically and mentally do, what they've been trained on, what equipment and workplace they have, and what happens in unusual or emergency conditions. Accessibility, usability, and operational needs that come out of this go into stories and acceptance examples. Representative users then check them.
+## 4. Transform stakeholder needs into stakeholder requirements
+ 
+### a. Identify the constraints on a system solution.
+ 
+- **Process outcome:** c
+- **XP implementation:** Constraints like required platforms, interfaces, deadlines, budgets, and contractual terms are recorded next to the stories they affect. If a constraint is unclear, a short technical spike can settle it before the team commits to an approach.
+### b. Identify the stakeholder requirements and functions that relate to critical quality characteristics, such as assurance, safety, security, environment, or health.
+ 
+- **Process outcome:** e
+- **XP implementation:** Quality needs get their own stories or explicit acceptance criteria, with measurable targets where possible, such as a security rule or a performance limit. The team plans the work and writes specific checks for them. Ordinary functional tests won't cover these by accident.
+### c. Define stakeholder requirements, consistent with life cycle concepts, scenarios, interactions, constraints, and critical quality characteristics.
+ 
+- **Process outcome:** e
+- **XP implementation:** Prioritized needs become clear stories with acceptance criteria that reflect the scenarios, constraints, and quality targets already agreed. The customer and developers keep adjusting them as they learn more.
+## 5. Analyze stakeholder requirements
+ 
+### a. Analyze the complete set of stakeholder requirements.
+ 
+- **Process outcome:** e
+- **XP implementation:** During planning and refinement, the customer and developers read through the stories and criteria together, looking for gaps, vague wording, conflicts, anything infeasible, and anything that can't be tested. Problem stories get split or rewritten. If the team lacks information, it runs a short spike.
+### b. Define critical performance measures that enable the assessment of technical achievement.
+ 
+- **Process outcome:** f
+- **XP implementation:** For the qualities that matter most, the customer and team agree on a number, for example a response time under a given load. Acceptance or performance tests check it, and the team looks at the results as the system grows.
+### c. Feed back the analyzed requirements to applicable stakeholders to validate that their needs and expectations have been adequately captured and expressed.
+ 
+- **Process outcome:** g
+- **XP implementation:** The customer takes the refined stories and acceptance examples back to the relevant stakeholders. Regular demos of working software give them another chance to say "that's not what I meant."
+### d. Resolve stakeholder requirements issues.
+ 
+- **Process outcome:** g
+- **XP implementation:** When stories are unclear or stakeholders disagree, the customer gets the affected people and the developers in one conversation. The story and its criteria are updated, priorities are revisited if needed, and the people involved confirm the result.
+## 6. Manage the stakeholder needs and requirements definition
+ 
+### a. Obtain explicit agreement with designated stakeholders on the stakeholder requirements.
+ 
+- **Process outcome:** g
+- **XP implementation:** Before the team builds on a set of stories, the customer goes over them with the designated stakeholders and records their agreement. As stories are finished, the customer accepts them against the agreed criteria. If a requirement changes, the agreement is revisited.
+### b. Maintain traceability of stakeholder needs and requirements.
+ 
+- **Process outcome:** i
+- **XP implementation:** Each story links back to who asked for it and why, forward to its acceptance tests, and to the related code or issue records. When a story is split, changed, or replaced, the links are updated so the reasoning isn't lost.
+### c. Provide key artifacts and information items that have been selected for baselines.
+ 
+- **Process outcome:** i
+- **XP implementation:** The baseline is the agreed story set, its acceptance criteria, the stakeholder links, and the current release or iteration plan. It lives in a shared, version-controlled place and is updated only when stakeholders agree to a change.
 
 ---
 
@@ -255,6 +334,8 @@ b. The key artifacts are the working software, the automated test suite, the tag
 ---
 
 ## 6.4.5 Design Definition process
+
+**Owner:** Emma
 
 Listed Outcomes
 
