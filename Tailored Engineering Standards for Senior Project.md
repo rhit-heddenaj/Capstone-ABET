@@ -352,25 +352,25 @@ Listed Outcomes
 
 a. c. 
 
-b. The team agrees on an incremental, evolutionary design strategy in release planning. The life cycle is short iterations and small releases. 
+b. The team agrees on an incremental, evolutionary design strategy in release planning. The life cycle is short iterations and small releases. According to the book: "The goal is to have deployable software at the end of the week which everyone can celebrate as progress."
 
 ### b. Select and prioritize design principles and design characteristics
 
 a. a.
 
-b. Use the Simple Design rules: pass all tests, no duplication, express intent, minimal elements. Add coding standards and the system metaphor for naming and shared vocabulary. The customer prioritizes characteristics through user stories.
+b. Use the Simple Design rules: pass all tests, no duplication, express intent, minimal elements. Add coding standards and the system metaphor for naming and shared vocabulary. The customer prioritizes characteristics through user stories. According to the book: "Have the customers pick a week’s worth of stories to implement this week."
 
 ### c. Identify and plan for the necessary enabling systems or services needed to support design definition
 
 a. g
 
-b. Plan the team’s tooling in the first iteration, or in an “iteration zero”. This covers the version control repository, the continuous integration server, the test framework, the shared workspace, whiteboards, and index cards.
+b. Plan the team’s tooling in the first iteration, or in an “iteration zero”. This covers the version control repository, the continuous integration server, the test framework, the shared workspace, whiteboards, and index cards. According to the book: "Automatically build the whole system and run all of the tests in ten minutes."
 
 ### d. Obtain or acquire access to the enabling systems or services used
 
 a. g
 
-b. Set up the repository, CI/build server, automated test harness, and IDE in the first iteration. Give every pair access and use a single integration machine. Collective code ownership means everyone has access to everything.
+b. Set up the repository, CI/build server, automated test harness, and IDE in the first iteration. Give every pair access and use a single integration machine. Collective code ownership means everyone has access to everything. According to the book: "Automatically build the whole system and run all of the tests in ten minutes."
 
 ## 2. Establish designs related to each software system element 
 
@@ -378,31 +378,31 @@ b. Set up the repository, CI/build server, automated test harness, and IDE in th
 
 a. a and b
 
-b. Turn user stories into engineering tasks in the iteration planning meeting. Allocate tasks to classes and components using quick design sessions. Write acceptance tests and unit tests first (TDD) so the test is the design specification of each element.
+b. Turn user stories into engineering tasks in the iteration planning meeting. Allocate tasks to classes and components using quick design sessions. Write acceptance tests and unit tests first (TDD) so the test is the design specification of each element. According to the book: "Start the week by writing automated tests that will run when the stories are completed."
 
 ### b. Define and prepare or obtain the necessary design enablers
 
 a. c
 
-b. Set the coding standard and the system metaphor. Prepare the unit test framework, refactoring tools, design patterns the team agrees on, and the CI pipeline. Pair programming spreads design knowledge as an enabler.
+b. Set the coding standard and the system metaphor. Prepare the unit test framework, refactoring tools, design patterns the team agrees on, and the CI pipeline. Pair programming spreads design knowledge as an enabler. According to the book: "Pair programming is a dialog between two people simultaneously programming (and analyzing and designing and testing) and trying to program better."
 
 ### c. Examine design alternatives and feasibility of implementation
 
 a. e
 
-b. Use spike solutions, which are small throwaway prototypes that test risky technical options. Pair programming gives immediate peer review, and the “simplest thing that could possibly work” rule picks among alternatives.
+b. Use spike solutions, which are small throwaway prototypes that test risky technical options. Pair programming gives immediate peer review, and the “simplest thing that could possibly work” rule picks among alternatives. According to the book: "You can even prototype alone and still respect pairing...When you’re done exploring, bring the resulting idea, not the code, back to the team."
 
 ### d. Refine or define the interfaces among the software system elements and with external entities
 
 a. d
 
-b. Define interfaces through tests. Unit tests specify the contracts between classes, and acceptance tests cover external interfaces. Continuous integration exposes interface mismatches early, and refactoring refines the interfaces each iteration. The client clarifies external interfaces.
+b. Define interfaces through tests. Unit tests specify the contracts between classes, and acceptance tests cover external interfaces. Continuous integration exposes interface mismatches early, and refactoring refines the interfaces each iteration. The client clarifies external interfaces. According to the book: "The integration step is unpredictable, but can easily take more time than the original programming."
 
 ### e. Establish the design artifacts
 
 a. f
 
-b. The artifacts are the working code, the automated unit and acceptance tests, story cards, and the system metaphor. Refactoring keeps the code self-documenting and the design clean
+b. The artifacts are the working code, the automated unit and acceptance tests, story cards, and the system metaphor. Refactoring keeps the code self-documenting and the design clean. According to the book: "Start the week by writing automated tests that will run when the stories are completed...Another implementation of the informative workspace is big, visible charts."
 
 ## 3. Assess alternatives for obtaining software system elements
 
@@ -410,25 +410,25 @@ b. The artifacts are the working code, the automated unit and acceptance tests, 
 
 a. e
 
-b. Identify the technology needs while estimating stories. Technology risk gets a spike. The team picks the technology that supports the current stories, and no more.
+b. Identify the technology needs while estimating stories. Technology risk gets a spike. The team picks the technology that supports the current stories, and no more. According to the book: "As soon as a story is written, try to estimate the development effort necessary to implement it."
 
 ### b. Identify candidate alternatives for the software system elements
 
 a. e
 
-b. Brainstorm in the whole-team design sessions. Candidates include build vs. reuse, existing libraries, and frameworks. Spikes make the candidates concrete
+b. Brainstorm in the whole-team design sessions. Candidates include build vs. reuse, existing libraries, and frameworks. Spikes make the candidates concrete. According to the book: "Brainstorm refinements to the system...The weekly heartbeat also gives you a convenient, frequent, and predictable platform for team and individual experiments."
 
 ### c. Assess each candidate alternative against criteria developed from expected design characterisitics and element requirements to determine suitability for the intended application
 
 a. e
 
-b. The criteria are the simple design rules, the acceptance tests, and the story estimates. Run the spike against the acceptance criteria, compare the results, and judge simplicity and testability.
+b. The criteria are the simple design rules, the acceptance tests, and the story estimates. Run the spike against the acceptance criteria, compare the results, and judge simplicity and testability. According to the book: "Estimation gives the business and technical perspectives a chance to interact, which creates value early, when an idea has the most potential."
 
 ### d. Choose the preferred alternatives among candidate design solutions for the software system elements
 
 a. e
 
-b. The team decides by consensus and picks the simplest alternative that satisfies the stories. The customer weighs in where cost or scope is affected. The decision is reversible, because refactoring lets the team change it later.
+b. The team decides by consensus and picks the simplest alternative that satisfies the stories. The customer weighs in where cost or scope is affected. The decision is reversible, because refactoring lets the team change it later. According to the book: "You can always add more stories later and deliver more than you promised"
 
 ## 4. Manage the design
 
@@ -436,22 +436,22 @@ b. The team decides by consensus and picks the simplest alternative that satisfi
 
 a. f
 
-b. Rationale lives in the code, test names, commit messages, story cards, and wiki/whiteboard photos. Tests act as executable documentation. Brief decision notes are written only when needed.
+b. Rationale lives in the code, test names, commit messages, story cards, and wiki/whiteboard photos. Tests act as executable documentation. Brief decision notes are written only when needed. According to the book: "“Give stories short names in addition to a short prose or graphical description...The results will be more widely understood, benefitting the project as a whole"
 
 ### b. Establish traceability between the detailed design elements, the system/software requirements, and the architechtural entities of the software system architechture
 
 a. h
 
-b. Each user story maps to acceptance tests, tasks, and commits (story IDs in commit messages). The system metaphor and consistent naming tie code to architecture. Traceability is lightweight and comes from the test suite and version control history.
+b. Each user story maps to acceptance tests, tasks, and commits (story IDs in commit messages). The system metaphor and consistent naming tie code to architecture. Traceability is lightweight and comes from the test suite and version control history. According to the book: "Start the week by writing automated tests that will run when the stories are completed..If you need to report progress to other parts of the organization in a familiar format, translate the cards into that format periodically."
 
 ### c. Determine the status of the software system and element design
 
 a. f
 
-b. Status is visible through passing automated tests, continuous integration builds, the task board, the iteration burn-down or velocity tracking, and the daily stand-up. Frequent refactoring and code review through pairing show design health.
+b. Status is visible through passing automated tests, continuous integration builds, the task board, the iteration burn-down or velocity tracking, and the daily stand-up. Frequent refactoring and code review through pairing show design health. According to the book: "An interested observer should be able to walk into the team space and get a general idea of how the project is going in fifteen seconds."
 
 ### d. Provide key artifacts and information items that have been selected for baselines. 
 
 a. f
 
-b. Each small release is tagged in version control as the baseline. The baseline holds the tested code, the acceptance and unit test suites, and the release notes. The customer accepts it at the end of the iteration or release.
+b. Each small release is tagged in version control as the baseline. The baseline holds the tested code, the acceptance and unit test suites, and the release notes. The customer accepts it at the end of the iteration or release. According to the book: "The goal is to have deployable software at the end of the week which everyone can celebrate as progress."
