@@ -258,21 +258,21 @@ b. The key artifacts are the working software, the automated test suite, the tag
 
 Listed Outcomes
 
-1. Design characteristics of each system element are defined
+1. Design characteristics of each system element are defined (a)
 
-2. System/software requirements are allocated to system elements
+2. System/software requirements are allocated to system elements (b)
 
-3. Design enablers necessary for design definition are selected or defined
+3. Design enablers necessary for design definition are selected or defined (c)
 
-4. Interfaces between system elements composing the system are defined or refined
+4. Interfaces between system elements composing the system are defined or refined (d)
 
-5. Design alternatives for system elements are assessed
+5. Design alternatives for system elements are assessed (e)
 
-6. Design artifacts are developed
+6. Design artifacts are developed (f)
 
-7. Any enabling system or services needed for design definition are available. 
+7. Any enabling system or services needed for design definition are available. (g) 
 
-8. Traceability of the design characteristics to the architectural entities of the system architecture is established. 
+8. Traceability of the design characteristics to the architectural entities of the system architecture is established. (h)
 
 
 ## Activity and Task responses
@@ -281,108 +281,108 @@ Listed Outcomes
 
 ### a. Define the design definition strategy, consistent with the selected life cycle model and anticipated design artifacts
 
-a. 
+a. c. 
 
-b. 
+b. The team agrees on an incremental, evolutionary design strategy in release planning. The life cycle is short iterations and small releases. 
 
 ### b. Select and prioritize design principles and design characteristics
 
-a. 
+a. a.
 
-b. 
+b. Use the Simple Design rules: pass all tests, no duplication, express intent, minimal elements. Add coding standards and the system metaphor for naming and shared vocabulary. The customer prioritizes characteristics through user stories.
 
 ### c. Identify and plan for the necessary enabling systems or services needed to support design definition
 
-a. 
+a. g
 
-b. 
+b. Plan the team’s tooling in the first iteration, or in an “iteration zero”. This covers the version control repository, the continuous integration server, the test framework, the shared workspace, whiteboards, and index cards.
 
 ### d. Obtain or acquire access to the enabling systems or services used
 
-a. 
+a. g
 
-b. 
+b. Set up the repository, CI/build server, automated test harness, and IDE in the first iteration. Give every pair access and use a single integration machine. Collective code ownership means everyone has access to everything.
 
 ## 2. Establish designs related to each software system element 
 
 ### a. Transform architectural and design characteristics into the design of software system elements
 
-a. 
+a. a and b
 
-b. 
+b. Turn user stories into engineering tasks in the iteration planning meeting. Allocate tasks to classes and components using quick design sessions. Write acceptance tests and unit tests first (TDD) so the test is the design specification of each element.
 
 ### b. Define and prepare or obtain the necessary design enablers
 
-a. 
+a. c
 
-b. 
+b. Set the coding standard and the system metaphor. Prepare the unit test framework, refactoring tools, design patterns the team agrees on, and the CI pipeline. Pair programming spreads design knowledge as an enabler.
 
 ### c. Examine design alternatives and feasibility of implementation
 
-a. 
+a. e
 
-b. 
+b. Use spike solutions, which are small throwaway prototypes that test risky technical options. Pair programming gives immediate peer review, and the “simplest thing that could possibly work” rule picks among alternatives.
 
 ### d. Refine or define the interfaces among the software system elements and with external entities
 
-a. 
+a. d
 
-b. 
+b. Define interfaces through tests. Unit tests specify the contracts between classes, and acceptance tests cover external interfaces. Continuous integration exposes interface mismatches early, and refactoring refines the interfaces each iteration. The client clarifies external interfaces.
 
 ### e. Establish the design artifacts
 
-a. 
+a. f
 
-b. 
+b. The artifacts are the working code, the automated unit and acceptance tests, story cards, and the system metaphor. Refactoring keeps the code self-documenting and the design clean
 
 ## 3. Assess alternatives for obtaining software system elements
 
 ### a. Determine technologies required for each element composing the software system
 
-a. 
+a. e
 
-b. 
+b. Identify the technology needs while estimating stories. Technology risk gets a spike. The team picks the technology that supports the current stories, and no more.
 
 ### b. Identify candidate alternatives for the software system elements
 
-a. 
+a. e
 
-b. 
+b. Brainstorm in the whole-team design sessions. Candidates include build vs. reuse, existing libraries, and frameworks. Spikes make the candidates concrete
 
 ### c. Assess each candidate alternative against criteria developed from expected design characterisitics and element requirements to determine suitability for the intended application
 
-a. 
+a. e
 
-b. 
+b. The criteria are the simple design rules, the acceptance tests, and the story estimates. Run the spike against the acceptance criteria, compare the results, and judge simplicity and testability.
 
 ### d. Choose the preferred alternatives among candidate design solutions for the software system elements
 
-a. 
+a. e
 
-b. 
+b. The team decides by consensus and picks the simplest alternative that satisfies the stories. The customer weighs in where cost or scope is affected. The decision is reversible, because refactoring lets the team change it later.
 
 ## 4. Manage the design
 
 ### a. Capture the design and rationale
 
-a. 
+a. f
 
-b. 
+b. Rationale lives in the code, test names, commit messages, story cards, and wiki/whiteboard photos. Tests act as executable documentation. Brief decision notes are written only when needed.
 
 ### b. Establish traceability between the detailed design elements, the system/software requirements, and the architechtural entities of the software system architechture
 
-a. 
+a. h
 
-b. 
+b. Each user story maps to acceptance tests, tasks, and commits (story IDs in commit messages). The system metaphor and consistent naming tie code to architecture. Traceability is lightweight and comes from the test suite and version control history.
 
 ### c. Determine the status of the software system and element design
 
-a. 
+a. f
 
-b. 
+b. Status is visible through passing automated tests, continuous integration builds, the task board, the iteration burn-down or velocity tracking, and the daily stand-up. Frequent refactoring and code review through pairing show design health.
 
 ### d. Provide key artifacts and information items that have been selected for baselines. 
 
-a. 
+a. f
 
-b. 
+b. Each small release is tagged in version control as the baseline. The baseline holds the tested code, the acceptance and unit test suites, and the release notes. The customer accepts it at the end of the iteration or release.
